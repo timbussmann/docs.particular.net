@@ -1,4 +1,7 @@
 {
-  "workspaceMount": "source=${localWorkspaceFolder}/samples/serializers/newtonsoft/Newtonsoft_3,target=/sample,type=bind,consistency=cached"
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:1": { "version": "6.0" }},
+  "workspaceMount": "source=${localWorkspaceFolder}/samples/serializers/newtonsoft/Newtonsoft_3,target=/sample,type=bind,consistency=cached",
   "workspaceFolder": "/sample"
 }
