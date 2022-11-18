@@ -1,7 +1,22 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/dotnet:1": { "version": "6.0" }},
+  "name": "Newtonsoft.Json sample",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:6.0",
   "workspaceMount": "source=${localWorkspaceFolder}/samples/serializers/newtonsoft/Newtonsoft_3,target=/sample,type=bind,consistency=cached",
-  "workspaceFolder": "/sample"
+  "workspaceFolder": "/sample",
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "ms-dotnettools.csharp"
+      ]
+    },
+    "codespaces": {
+      "openFiles": [
+        "Sample/Program.cs"
+      ]
+    }
+  },
+  "postCreateCommand": "dotnet build",
+  "remoteUser": "vscode"
 }
