@@ -1,0 +1,4 @@
+{
+  "workspaceMount": "source=${localWorkspaceFolder}/samples/serializers/newtonsoft/Newtonsoft_3,target=/sample,type=bind,consistency=cached"
+  "workspaceFolder": "/sample"
+}
