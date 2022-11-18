@@ -17,6 +17,6 @@
       ]
     }
   },
-  "postCreateCommand": "dotnet build",
+  "postCreateCommand": "dotnet build && cd /sample/Sample",
   "remoteUser": "vscode"
 }
